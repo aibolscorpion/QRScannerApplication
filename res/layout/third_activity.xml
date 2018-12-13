@@ -1,0 +1,167 @@
+<RelativeLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:background="@color/background_blue"
+     >
+<RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content" 
+     android:id="@+id/personalInfo"
+    >
+<de.hdodenhof.circleimageview.CircleImageView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+     app:border_width="4dp"
+     app:border_color="@color/white"
+     android:id="@+id/avatar"
+     android:layout_width="100dp"
+     android:layout_height="100dp"
+     android:layout_alignParentTop="true"
+     android:layout_alignParentLeft="true"
+     android:layout_gravity="center"
+     android:layout_marginLeft="15dp"
+     android:layout_marginRight="15dp"
+     android:layout_marginTop="15dp"
+     />
+ <TextView 
+     android:id="@+id/nameSurname"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toRightOf="@+id/avatar"
+     android:textColor="@color/white"
+     android:textSize="20sp"
+     android:layout_marginTop="15dp"
+     />
+ 
+ <TextView 
+     android:id="@+id/email"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toRightOf="@+id/avatar"
+     android:layout_below="@+id/nameSurname"
+     android:textColor="@color/text_color"/>
+ 
+ <TextView 
+     android:id="@+id/phone"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toRightOf="@+id/avatar"
+     android:layout_below="@+id/email"
+     android:textColor="@color/text_color"/>
+</RelativeLayout>
+<!--
+<RelativeLayout 
+    android:id="@+id/stockButtonLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+     android:layout_below="@+id/personalInfo"
+     android:layout_marginTop="10dp">
+ <Button
+     android:id="@+id/stockButton"
+     android:layout_width="match_parent"
+     android:layout_height="50dp"
+     android:background="@drawable/stock_button_background"
+     android:paddingRight="15dp"
+     android:text="Акции"
+     android:gravity="left|center_vertical"
+     android:drawableRight="@drawable/next"
+     android:paddingLeft="15dp"
+     android:textSize="20sp"
+     android:textColor="@color/white"
+     />
+	<ImageView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/lineTop"
+	    android:layout_alignTop="@+id/stockButton"
+	    android:src="@drawable/line"
+	    android:layout_marginLeft="15dp"
+	    android:layout_marginTop="-2dp"/>
+	<ImageView 
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/lineBottom"
+	    android:layout_alignBottom="@+id/stockButton"
+	    android:src="@drawable/line"
+	    android:layout_marginBottom="-1dp"
+	    android:layout_marginLeft="15dp"/>
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/stockButton"
+	    android:layout_centerInParent="true"
+	    android:layout_marginRight="40dp"
+	    >
+     <ImageView
+         android:id="@+id/newStockSumImageView"
+         android:layout_width="35dp"
+         android:layout_height="35dp"
+         android:layout_marginRight="50dp"
+         android:background="@drawable/stock_sum_button"
+          />
+
+      <TextView
+          android:id="@+id/stockSumTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerHorizontal="true"
+          android:layout_centerVertical="true"
+          android:textColor="@color/white"
+          android:textSize="20sp" />
+
+</RelativeLayout>
+ </RelativeLayout>
+ -->
+<ImageView 
+    android:layout_below="@+id/personalInfo"
+    android:id="@+id/discount"
+    android:layout_width="40dp"
+    android:layout_height="30dp"
+    android:src="@drawable/skidka"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="15dp"
+    />
+<TextView 
+    android:id="@+id/discountTextView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textSize="20sp"
+    android:textColor="@color/white"
+    android:layout_toRightOf="@+id/discount"
+    android:layout_below="@+id/personalInfo"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"/> 
+    
+    <EditText 
+        android:id="@+id/enterSumEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:hint="Введите сумму"
+        android:textColorHint="@color/button_text_color"
+        android:layout_below="@+id/discount"
+        android:textColor="@color/button_text_color"
+        android:background="@drawable/enter_sum_edit_text_background"
+        android:layout_marginLeft="13.3636363636364dp"
+        android:layout_marginRight="13.3636363636364dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:inputType="number"
+        android:layout_marginTop="10dp"
+        />
+    
+  <Button 
+        android:id="@+id/send"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:text="Отправить"
+        android:onClick="send"
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:background="@drawable/send_button_background"
+        android:layout_marginLeft="13.3636363636364dp"
+        android:layout_marginRight="13.3636363636364dp"
+        android:textSize="18sp"
+        android:layout_marginBottom="20dp"
+        />
+</RelativeLayout>

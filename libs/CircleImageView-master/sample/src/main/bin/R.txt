@@ -1,0 +1,15 @@
+int attr border_color 0x7f010001
+int attr border_width 0x7f010000
+int color dark 0x7f040000
+int color light 0x7f040001
+int dimen base_padding 0x7f050000
+int drawable hugh 0x7f020000
+int drawable ic_launcher 0x7f020001
+int id container 0x7f080000
+int layout activity_main 0x7f030000
+int layout fragment_main 0x7f030001
+int string app_name 0x7f060000
+int style AppTheme 0x7f070000
+int[] styleable CircleImageView { 0x7f010000, 0x7f010001 }
+int styleable CircleImageView_border_color 1
+int styleable CircleImageView_border_width 0
